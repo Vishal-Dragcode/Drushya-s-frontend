@@ -31,7 +31,7 @@ const categoryData = {
     ],
     price: "1,49,999.00",
     originalPrice: "1,99,999.00",
-    includes: ["600+ High-Res Edited Photos", "Cinematic Highlight Film (5-7 mins)", "Full Ceremony Documentary Video", "Pre-wedding Shoot Included", "Premium Layflat Album (40 pages)", "Lifetime Gallery Access" ]
+    includes: ["600+ High-Res Edited Photos", "Cinematic Highlight Film (5-7 mins)", "Full Ceremony Documentary Video", "Pre-wedding Shoot Included", "Premium Layflat Album (40 pages)", "Lifetime Gallery Access"]
   },
   corporate: {
     tier: "Business Tier",
