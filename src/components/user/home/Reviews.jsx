@@ -67,7 +67,7 @@ const Reviews = () => {
 
   return (
     <section className="py-10 bg-gray-50 overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center" data-aos="fade-up">
         <h4 className="text-yellow-600 font-bold uppercase tracking-widest text-sm mb-2">Testimonials</h4>
         <h2 className="text-3xl md:text-4xl font-medium text-gray-900 mb-4">What Our Clients Say</h2>
         <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>

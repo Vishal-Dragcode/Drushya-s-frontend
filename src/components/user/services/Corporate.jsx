@@ -7,25 +7,25 @@ const corporateServices = [
     id: 'events',
     title: 'Corporate Events',
     description: 'From annual galas to large conferences, we document your professional events with a keen eye for branding and networking moments.',
-    imgSrc: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
+    thumbnail: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop',
   },
   {
     id: 'branding',
     title: 'Brand Identity',
     description: 'Showcase your company culture. We create compelling visual narratives that communicate your values to clients and top talent.',
-    imgSrc: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop',
+    thumbnail: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop',
   },
   {
     id: 'promotions',
     title: 'Promotional Campaigns',
     description: 'High-impact visuals designed for your marketing channels, ensuring your brand stands out in a crowded marketplace.',
-    imgSrc: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=800&auto=format&fit=crop',
+    thumbnail: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=800&auto=format&fit=crop',
   },
   {
     id: 'headshots',
     title: 'Professional Headshots',
     description: 'Make a great first impression. We provide high-end corporate headshots for your leadership team and entire staff.',
-    imgSrc: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop',
+    thumbnail: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop',
   }
 ];
 
@@ -40,7 +40,7 @@ const Corporate = () => {
           alt="Corporate Background"
           className="absolute inset-0 w-full h-[60vh] md:h-full object-cover opacity-50"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center pt-24">
+        <div className="absolute inset-0 flex flex-col items-center justify-center pt-24" data-aos="fade-up">
           <h1 className="text-4xl md:text-5xl text-white tracking-wide mb-6 font-medium">
             Corporate Photography
           </h1>
@@ -59,7 +59,7 @@ const Corporate = () => {
              Back to Services
           </button>
         </div>
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h4 className="text-yellow-600 font-bold uppercase tracking-widest text-sm mb-2">Our Specialities</h4>
           <h2 className="text-3xl md:text-4xl font-medium text-gray-900 mb-4">Events, Branding, Promotions & Headshots</h2>
           <p className="text-gray-600 max-w-2xl mx-auto font-light text-lg">Elevate your business profile with our comprehensive suite of corporate visual services.</p>
@@ -71,7 +71,7 @@ const Corporate = () => {
               key={service.id}
               title={service.title}
               description={service.description}
-              imgSrc={service.imgSrc}
+              thumbnail={service.thumbnail}
               link={`/packages/${service.id}`}
               buttonText="View Package"
               secondaryButtonText="Gallery"

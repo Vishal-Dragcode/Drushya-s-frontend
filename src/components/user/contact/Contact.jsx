@@ -12,7 +12,7 @@ const Contact = () => {
           alt="Contact Us Background"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center pt-24">
+        <div className="absolute inset-0 flex flex-col items-center justify-center pt-24" data-aos="fade-up">
           <h1 className="text-4xl md:text-5xl text-white tracking-wide mb-6 font-medium">
             Contact Us
           </h1>
@@ -25,7 +25,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-5 overflow-hidden rounded-2xl shadow-xl bg-white border border-gray-100">
           
           {/* Left Side: Contact Information */}
-          <div className="p-8 md:p-12 lg:col-span-2 bg-gray-50 flex flex-col justify-center border-r border-gray-100">
+          <div className="p-8 md:p-12 lg:col-span-2 bg-gray-50 flex flex-col justify-center border-r border-gray-100" data-aos="fade-right">
             <div className="mb-10">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Get in Touch</h2>
               <p className="text-gray-600 font-light text-base">
@@ -73,7 +73,7 @@ const Contact = () => {
           </div>
 
           {/* Right Side: Form */}
-          <div className="p-8 md:p-12 lg:col-span-3 flex flex-col justify-center bg-white">
+          <div className="p-8 md:p-12 lg:col-span-3 flex flex-col justify-center bg-white" data-aos="fade-left">
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Send us a message</h3>
               <p className="text-gray-500 font-light text-sm">Fill out the form below and our team will get back to you shortly.</p>
@@ -86,7 +86,7 @@ const Contact = () => {
                   <input 
                     type="text" 
                     className="w-full bg-gray-50 border border-gray-200 text-gray-900 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition-all duration-300"
-                    placeholder="John"
+                    placeholder="e.g., Jane"
                   />
                 </div>
                 <div className="space-y-2">
@@ -94,7 +94,7 @@ const Contact = () => {
                   <input 
                     type="text" 
                     className="w-full bg-gray-50 border border-gray-200 text-gray-900 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition-all duration-300"
-                    placeholder="Doe"
+                    placeholder="e.g., Smith"
                   />
                 </div>
               </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                 <input 
                   type="email" 
                   className="w-full bg-gray-50 border border-gray-200 text-gray-900 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition-all duration-300"
-                  placeholder="john@example.com"
+                  placeholder="e.g., jane@example.com"
                 />
               </div>
 
@@ -124,7 +124,7 @@ const Contact = () => {
                 <textarea 
                   rows={4}
                   className="w-full bg-gray-50 border border-gray-200 text-gray-900 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition-all duration-300 resize-none"
-                  placeholder="Tell us about your project or inquiry..."
+                  placeholder="How can we help bring your vision to life?"
                 ></textarea>
               </div>
               
@@ -139,13 +139,13 @@ const Contact = () => {
 
       {/* Maps Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
-        <div className="text-center mb-10">
+        <div className="text-center mb-10" data-aos="fade-up">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Find Us on the Map</h3>
           <p className="text-gray-600 font-light text-lg">Visit our premium studios located conveniently in Pune and Ahilyanagar.</p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Baner Location */}
-          <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-100">
+          <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-100" data-aos="fade-up">
             <h4 className="text-xl font-bold text-gray-900 mb-3 ml-2">Drushya Productions (Pune)</h4>
             <div className="rounded-xl overflow-hidden shadow-inner h-[400px]">
               <iframe 
@@ -161,7 +161,7 @@ const Contact = () => {
           </div>
           
           {/* Ahilyanagar Location */}
-          <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-100">
+          <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="100">
             <h4 className="text-xl font-bold text-gray-900 mb-3 ml-2">The Rishi Studio (Ahilyanagar)</h4>
             <div className="rounded-xl overflow-hidden shadow-inner h-[400px]">
               <iframe 

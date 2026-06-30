@@ -7,25 +7,25 @@ const commercialServices = [
     id: 'advertisements',
     title: 'Advertisements',
     description: 'We shoot high-impact imagery for billboards, magazines, and digital ads that instantly grab attention and drive conversions.',
-    imgSrc: 'https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=800&auto=format&fit=crop',
+    thumbnail: 'https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=800&auto=format&fit=crop',
   },
   {
     id: 'product',
     title: 'Product Shoots',
     description: 'Make your products irresistible. From sleek studio lighting to lifestyle contexts, we highlight the best features of your offerings.',
-    imgSrc: 'https://images.unsplash.com/photo-1444653389962-8149286c578a?q=80&w=800&auto=format&fit=crop',
+    thumbnail: 'https://images.unsplash.com/photo-1444653389962-8149286c578a?q=80&w=800&auto=format&fit=crop',
   },
   {
     id: 'musicvideos',
     title: 'Music Videos',
     description: 'Bring your sound to life. We provide full-scale cinematography and direction to create visually stunning music videos.',
-    imgSrc: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800&auto=format&fit=crop',
+    thumbnail: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800&auto=format&fit=crop',
   },
   {
     id: 'fashion',
     title: 'Fashion Editorials',
     description: 'Avant-garde and trendy. We collaborate with designers and models to shoot lookbooks and editorial spreads that define style.',
-    imgSrc: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=800&auto=format&fit=crop',
+    thumbnail: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=800&auto=format&fit=crop',
   }
 ];
 
@@ -40,7 +40,7 @@ const Commercial = () => {
           alt="Commercial Background"
           className="absolute inset-0 w-full h-[60vh] md:h-full object-cover opacity-50"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center pt-24">
+        <div className="absolute inset-0 flex flex-col items-center justify-center pt-24" data-aos="fade-up">
           <h1 className="text-4xl md:text-5xl text-white tracking-wide mb-6 font-medium">
             Commercial Photography
           </h1>
@@ -59,7 +59,7 @@ const Commercial = () => {
              Back to Services
           </button>
         </div>
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h4 className="text-yellow-600 font-bold uppercase tracking-widest text-sm mb-2">Our Specialities</h4>
           <h2 className="text-3xl md:text-4xl font-medium text-gray-900 mb-4">Ads, Products, Music Videos & Fashion</h2>
           <p className="text-gray-600 max-w-2xl mx-auto font-light text-lg">Creative and compelling commercial photography to make your brand impossible to ignore.</p>
@@ -71,7 +71,7 @@ const Commercial = () => {
               key={service.id}
               title={service.title}
               description={service.description}
-              imgSrc={service.imgSrc}
+              thumbnail={service.thumbnail}
               link={`/packages/${service.id}`}
               buttonText="View Package"
               secondaryButtonText="Gallery"
